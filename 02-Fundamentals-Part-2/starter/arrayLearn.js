@@ -27,3 +27,27 @@ const calcAge = function (birthYear) {
 };
 const bornYears = [1990, 1967, 2002, 2010, 2018];
 console.log(calcAge(bornYears[0]));
+
+/* Lecture 40 Array Operations */
+// Push to add to end of array
+const newLength = friends.push('Haillo');
+console.log(`Push added new friends for total ${newLength} friends`);
+
+// Unshift to add to front of array
+friends.unshift('First');
+console.log(`Push added new friends for ${friends} friends`);
+
+// Remove elements
+const popped = friends.pop(); // Remove last element and return removed item
+console.log(`${friends} and removed ${popped}`);
+
+const shifted = friends.shift(); // Remove first
+console.log(`${friends} and removed ${shifted}`);
+
+// Show where element is
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+// Boolean check if element is there (does not do type coercion)
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
